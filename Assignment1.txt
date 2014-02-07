@@ -1,0 +1,4 @@
+$(".info tr:first td:first").text("the BOSS")
+
+$(".resits").children("#appeals, if").text("You wish to object to the assessment of an exam, you can try. First, please, find more info on complaints, objections and appeals here.");
+$('.resits').children("#appeals, if").append('<div> <a href="http://rockinmomsworld.files.wordpress.com/2013/11/channing-tatum-giving-the-finger-reaction-gif-in-21-jump-street.gif">here</a> </div>')
