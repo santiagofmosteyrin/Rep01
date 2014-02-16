@@ -1,0 +1,13 @@
+
+var studentsTemplate ='<script id="students-template" type="text/x-handlebars-template"><table><thead><th>Name</th><th>UvANumber</th><th>Email</th><th>AcademicBackground</th><th>OS</th></thead><tbody>{{#students}}<tr><td>{{Name}}</td><td>{{UvANuber}}</td><td>{{Email}}</td><td>{{AcademicBackground}}</td><td>{{OS}}</td></tr>{{/students}}</tbody></table></script>';
+$(".info").append(studentsTemplate);
+
+var students = $("#students-template").html();
+var template = Handlebars.compile(students);
+var data = { students: [
+      {name: "Trinity", email: "r.l.bekkenkamp@gmail.com", uvanumber: "10543674", academicbackground: "Theater Studies", os: "MacOSX" },
+      {name: "Morpheus", email: "fernandezdemosteyrin@gmail.com", uvanumber: "10544054", academicbackground: "Fine Arts", os: "Windows" },
+]};
+
+
+$("#content-placeholder").html(template(data));
